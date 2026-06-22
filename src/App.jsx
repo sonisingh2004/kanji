@@ -5,6 +5,7 @@ import About from './pages/About'
 import Products from './pages/Products'
 import Contact from './pages/Contact'
 import CartModal from './components/CartModal'
+import WhatsAppWidget from './components/WhatsAppWidget'
 
 import './App.css'
 
@@ -122,6 +123,7 @@ function App() {
         onRemoveItem={handleRemoveItem}
         onClearCart={handleClearCart}
       />
+      <WhatsAppWidget />
     </Router>
   )
 }
