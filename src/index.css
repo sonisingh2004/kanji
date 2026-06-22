@@ -1,22 +1,22 @@
 @import "tailwindcss";
 
 @theme {
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  --font-sans: 'Outfit', 'Plus Jakarta Sans', sans-serif;
 
-  --color-burgundy: #9c1b30;
-  --color-burgundy-hover: #821526;
-  --color-burgundy-light: #fcf4f5;
+  --color-burgundy: #ba1d3b;
+  --color-burgundy-hover: #9b142d;
+  --color-burgundy-light: #fdf2f4;
 
-  --color-forest: #4b7a47;
-  --color-forest-hover: #3d633a;
-  --color-forest-light: #f3f7f2;
+  --color-forest: #4c8a42;
+  --color-forest-hover: #3b6d32;
+  --color-forest-light: #f2f8f1;
 
-  --color-sand: #fdfbf7;
-  --color-sand-dark: #f6f1e8;
+  --color-sand: #fdf8f5;
+  --color-sand-dark: #f5ede8;
 
-  --color-charcoal: #2c2523;
-  --color-charcoal-muted: #5c5451;
+  --color-charcoal: #1c1c1c;
+  --color-charcoal-muted: #555555;
 }
 
 html {
@@ -42,4 +42,28 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #d4cec2;
+}
+
+/* Hero Section Background Image */
+.hero-bg {
+  background-image: url('/hero-kanji.png');
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+}
+
+/* About Hero Section Background Image */
+.about-hero-bg {
+  background-image: url('/about.png');
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+}
+
+/* Product Hero Section Background Image */
+.product-hero-bg {
+  background-image: url('/product-banner.png');
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
 }

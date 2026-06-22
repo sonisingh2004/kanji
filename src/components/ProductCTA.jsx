@@ -35,7 +35,13 @@ export default function ProductCTA({ onAddToCart }) {
               {/* Add to Cart */}
               <div className="space-y-4">
                 <button 
-                  onClick={onAddToCart}
+                  onClick={() => onAddToCart({
+                    id: 'fermented-beetroot-powder-pack',
+                    name: 'Fermented Beetroot Powder (Box Pack)',
+                    price: 299,
+                    image: '/kanji.png',
+                    description: '20 Sachets | Instant Drink Mix'
+                  })}
                   className="flex items-center justify-center bg-burgundy hover:bg-burgundy-hover text-white w-full sm:w-auto px-10 py-4 rounded-full text-base font-bold shadow-lg shadow-burgundy/10 hover:shadow-xl hover:shadow-burgundy/20 transform hover:-translate-y-[2px] transition-all duration-300 font-sans cursor-pointer group"
                 >
                   <CartIcon className="w-5 h-5 mr-2 transform group-hover:scale-110 transition-transform" />

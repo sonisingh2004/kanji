@@ -1,11 +1,15 @@
 import React from 'react'
 
 export const LeafLogoIcon = () => (
-  <svg className="w-8 h-8 text-forest" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.47.4.13.76-.17.76-.59V17c0-2.2 1.8-4 4-4h2.2c2.2 0 4 1.8 4 4v3.88c0 .42.36.72.76.59C21.13 20.17 24 16.42 24 12A10 10 0 0 0 12 2z" />
-    <path d="M12 2v11" />
-    <path d="M12 8c2.5 0 5-1.5 6-3.5" />
-    <path d="M12 10.5c-2.5 0-5-1.5-6-3.5" />
+  <svg className="w-8 h-8 shrink-0" viewBox="0 0 40 40" fill="none">
+    {/* Stem */}
+    <path d="M14 34C17.5 30 20 23.5 20.5 13" stroke="#4C8A42" strokeWidth="2.5" strokeLinecap="round" />
+    {/* Left Leaf */}
+    <path d="M19 19.5C13 20 8.5 22.5 8.5 27.5C8.5 32.5 14 31 19 28C19 28 20 24 19 19.5Z" fill="#4C8A42" stroke="#3b6d32" strokeWidth="1.5" strokeLinejoin="round" />
+    {/* Right Leaf */}
+    <path d="M20.5 13C25 15.5 29 20 29.5 25C30 30 25.5 29.5 21 27C21 27 19.5 21.5 20.5 13Z" fill="#84C67D" stroke="#4C8A42" strokeWidth="1.5" strokeLinejoin="round" />
+    {/* Top Small Leaf */}
+    <path d="M20.5 13C18 10 14 8 13.5 12C13 16 17.5 16 20.5 13Z" fill="#B1E6AC" stroke="#4C8A42" strokeWidth="1" strokeLinejoin="round" />
   </svg>
 );
 
@@ -18,54 +22,55 @@ export const CartIcon = ({ className = "w-6 h-6" }) => (
 );
 
 export const ArrowRightIcon = () => (
-  <svg className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+  <svg className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
     <line x1="5" y1="12" x2="19" y2="12" />
     <polyline points="12 5 19 12 12 19" />
   </svg>
 );
 
 export const PlayIcon = () => (
-  <svg className="w-3 h-3 text-burgundy" viewBox="0 0 24 24" fill="currentColor">
-    <polygon points="5 3 19 12 5 21 5 3" />
+  <svg className="w-2.5 h-2.5 fill-burgundy translate-x-[0.5px]" viewBox="0 0 24 24">
+    <polygon points="6 3 20 12 6 21 6 3" />
   </svg>
 );
 
-export const IntestineIcon = ({ className = "w-6 h-6 text-burgundy" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M6 8.5c0-1.5 1-2.5 2.5-2.5S11 7.5 11 9s-1 2.5-2.5 2.5S6 10 6 8.5z" />
-    <path d="M18 15.5c0 1.5-1 2.5-2.5 2.5S13 16.5 13 15s1-2.5 2.5-2.5s2.5 1.5 2.5 2.5z" />
-    <path d="M8.5 11.5c0 1.5 1 2.5 2.5 2.5s2.5-1 2.5-2.5s-1-2.5-2.5-2.5s-2.5 1-2.5 2.5z" />
-    <path d="M12 6a4 4 0 0 0-4-4C5 2 3 4.5 3 7.5S5.5 13 7.5 13" />
-    <path d="M12 18a4 4 0 0 0 4 4c3 0 5-2.5 5-5.5s-2.5-5.5-4.5-5.5" />
-    <path d="M7.5 13c1 0 2.5-.5 3.5-1.5s1-2 2-2 1.5.5 2 1.5.5 2 1.5 2" />
+export const IntestineIcon = ({ className = "w-6 h-6" }) => (
+  <svg className={className} viewBox="0 0 32 32" fill="none">
+    {/* Detailed red intestine icon to match the screenshot */}
+    <path d="M8 12C8 9.5 9.5 8 12.5 8C15.5 8 16.5 10 16.5 11.5C16.5 13 15 14.5 12.5 14.5C10 14.5 8 13.5 8 12Z" stroke="#BA1D3B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M24 20C24 22.5 22.5 24 19.5 24C16.5 24 15.5 22 15.5 20.5C15.5 19 17 17.5 19.5 17.5C22 17.5 24 18.5 24 20Z" stroke="#BA1D3B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M12.5 14.5C15.5 14.5 17 16 17 18.5C17 21 15.5 22 13 22C10.5 22 9.5 20.5 9.5 19" stroke="#BA1D3B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M19.5 17.5C16.5 17.5 15 16 15 13.5C15 11 16.5 10 19 10C21.5 10 22.5 11.5 22.5 13" stroke="#BA1D3B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M13 22C13 24 11 26 8.5 26" stroke="#BA1D3B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M19 10C19 8 21 6 23.5 6" stroke="#BA1D3B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 
-export const ShieldLeafIcon = ({ className = "w-6 h-6 text-burgundy" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-    <path d="M12 8a3 3 0 0 1 3 3c0 2-3 5-3 5s-3-3-3-5a3 3 0 0 1 3-3z" />
-    <path d="M12 11v3" />
+export const ShieldLeafIcon = ({ className = "w-6 h-6" }) => (
+  <svg className={className} viewBox="0 0 32 32" fill="none">
+    {/* Beautiful leaf icon outline with red lines */}
+    <path d="M16 6C16 6 8 11 8 17C8 23 11.5 26 16 26C20.5 26 24 23 24 17C24 11 16 6 16 6Z" stroke="#BA1D3B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M16 6V26" stroke="#BA1D3B" strokeWidth="1.8" strokeLinecap="round" />
+    <path d="M16 12C13 14 11 17 11 17" stroke="#BA1D3B" strokeWidth="1.5" strokeLinecap="round" />
+    <path d="M16 16C19 18 21 21 21 21" stroke="#BA1D3B" strokeWidth="1.5" strokeLinecap="round" />
   </svg>
 );
 
-export const BacteriaIcon = ({ className = "w-6 h-6 text-burgundy" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="12" cy="12" r="3" />
-    <circle cx="6" cy="7" r="2.5" />
-    <circle cx="18" cy="7" r="2" />
-    <circle cx="6" cy="17" r="1.8" />
-    <circle cx="17" cy="17" r="2.2" />
-    <path d="M8.5 8.5l4 4" />
-    <path d="M15.5 8.5l-3.5 3.5" />
-    <path d="M7.5 15.5l3.5-3.5" />
-    <path d="M15.5 15.5l-3.5-3.5" />
+export const BacteriaIcon = ({ className = "w-6 h-6" }) => (
+  <svg className={className} viewBox="0 0 32 32" fill="none">
+    {/* Probiotics circle with dotted bacteria cluster */}
+    <circle cx="16" cy="16" r="10" stroke="#BA1D3B" strokeWidth="2" strokeDasharray="3 3" />
+    <circle cx="16" cy="16" r="3.5" stroke="#BA1D3B" strokeWidth="2" />
+    <circle cx="12" cy="11" r="2" fill="#BA1D3B" />
+    <circle cx="21" cy="12" r="1.5" fill="#BA1D3B" />
+    <circle cx="11" cy="19" r="1.5" fill="#BA1D3B" />
+    <circle cx="19" cy="20" r="2.5" fill="#BA1D3B" />
   </svg>
 );
 
-export const LightningIcon = ({ className = "w-6 h-6 text-burgundy" }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+export const LightningIcon = ({ className = "w-6 h-6" }) => (
+  <svg className={className} viewBox="0 0 32 32" fill="none">
+    <path d="M19 4L7 18H16L13 28L25 14H16L19 4Z" stroke="#BA1D3B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
   </svg>
 );
 
